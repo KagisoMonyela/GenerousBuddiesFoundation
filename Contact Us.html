@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8">  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>CONTACT US</title>
+  <!-- === CSS=== -->
+   <link rel="stylesheet" type="text/css" href="css/style.css">
+ <!--[if lt IE 9]
+   <script src="//html5shiv.google.com/svnltrunk/html5.js"></script>
+ ![endif]-->
+
+ <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+ <!-- Font awsome icons-->
+ <script src="https://kit.fontawesome.com/2dcbf3413d.js" crossorigin="anonymous"></script>
+
+ </head>
+ <body>
+    <!-- Navbar-->
+    <nav class="navbar">
+        <a href="HomePage.html"><img src="img/logo.png" style="width: 200px" /></a>  
+        <ul class="nav-links">
+          <li><a href="Home.html">HOME</a></li>
+          <li><a href = "Programmes and Projects.html" >PROGRAMES AND PROJECTS</a></li>
+          <li><a href = "Get Involved.html" >GET INVOLVED</a></li>
+          <li><a href = "Donations.html" >DONATIONS</a></li>
+          <li><a href = "Gallery.html">GALLERY</a></li>
+          <li><a href = "About Us.html" >ABOUT US</a></li>
+          <li class = "active" ><a href = "Contact Us.html">CONTACT US</a></li>
+        </ul>
+        <img src="img/menu-icon.png" alt="" class="menu-btn">
+    </nav>
+  <header>
+  
+   <div class="header-content">
+    <h2>CONTACT US</h2>
+    <div class="line"></div>
+    <h1>GENEROUS BUDDIES FOUNDATION</h1>
+    <a href="#" class="ctn">Learn More</a>
+   </div>
+  
+ </header>
+
+ <!--alert message start here-->
+ <!--<div class="alert-success">
+  <span>Message sent! Thank you for contacting us.</span>
+ </div>
+-->
+<!--
+ <div class="alert-error">
+  <span>Something went wrong! please try again</span>
+</div>
+-->
+ <!--alert message end here-->
+
+<div class="contact-section">
+  <div class="contact-info">
+    <div><i class="fas fa-map-marker-alt"></i>Address, city, country</div>
+    <div><i class="fas fa-envelope"></i>contact@gmail.com</div>
+    <div><i class="fas fa-phone"></i>+00 0000 000 000</div>
+    <div><i class="fas fa-clock"></i>Mon - Fri 8:00 AM to 6:00 PM</div>
+  </div>
+  <div class="contact-form">
+    <h2>Contact Us</h2>
+    <form class="contact" action="https://formsubmit.co/mogalekmonyela@gmail.com" method="post">
+      <input type="text" name="first name" class="text-box" placeholder="First Name" required>
+      <input type="text" name="last name" class="text-box" placeholder="Last Name" required>
+      <input type="email" name="email" class="text-box" placeholder="Email" required>
+      <input type="number" name="phone" class="text-box" placeholder="+2766 000 9999" required>
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <input type="submit" name="submit" class="send-btn" value="send">
+    </form>
+  </div>
+</div>
+ 
+
+<section class="footer-content">
+  <a class="btn" href="https://www.facebook.com/"><img src="img/Facebook1.png"/></a>
+  <a class="btn" href="https://www.instagram.com/"><img src="img/Instagram1.png"/></a>
+  <a class="btn" href="https://twitter.com/home?lang=en"><img src="img/Twitter1.png"/></a>
+	<a class="btn" href="https://www.youtube.com/watch?v=SeBItlDg0wc&t=317s"><img src="img/YouTube1.png"/></a>
+  <a class="btn" href="https://www.youtube.com/watch?v=SeBItlDg0wc&t=317s"><img src="img/linkedin.png" style="height:64px"/></a>
+  <div class="footer">
+    Copyright &copy; 2019.Boss car wash pending.All Rights Reserved
+  </div>
+  
+</section>
+
+ <script>
+   const menuBtn = document.querySelector ('.menu-btn')
+   const navlinks = document.querySelector('.nav-links')
+
+   menuBtn.addEventListener('click',()=>{
+    navlinks.classList.toggle('mobile-menu')
+   })
+ </script>
+
+</html>
