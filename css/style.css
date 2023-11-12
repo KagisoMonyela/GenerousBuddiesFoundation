@@ -444,13 +444,12 @@ header nav ul li a:hover {
 	opacity: 0.9;
 }
 
-.contact-form .text-box:first-child {
-	margin-right: 15px;
-}
+
 
 .contact-form textarea {
 	background: #000;
 	color: whitesmoke;
+    font-family: 'Poppins', sans-serif;
 	border: none;
 	width: 100%;
 	padding: 12px;
