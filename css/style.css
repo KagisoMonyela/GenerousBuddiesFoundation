@@ -62,7 +62,7 @@ p {
 }
 
 section {
-    padding: 100px 0;
+    padding: 60px 0;
     position: relative;
 }
 
@@ -297,6 +297,8 @@ header nav ul li a:hover {
     font-weight: 300;
 }
 
+
+
 .donation .donationContainer p {
     font-size: 15px;
     line-height: 20px;
@@ -311,6 +313,11 @@ header nav ul li a:hover {
     font-weight: bold;
     font-size: 14px;
     outline: none;
+    cursor: pointer;
+}
+
+.donation .donationContainer button:hover{
+    background-color: #2E94E3;
 }
 
 /* Donations style end */
@@ -449,9 +456,9 @@ header nav ul li a:hover {
 .contact-form textarea {
 	background: #000;
 	color: whitesmoke;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins';
 	border: none;
-	width: 100%;
+	width: 98%;
 	padding: 12px;
 	font-size: 15px;
 	min-height: 200px;
@@ -465,6 +472,7 @@ header nav ul li a:hover {
 
 .contact-form .send-btn {
 	float: right;
+    margin-right: 14px;
 	background: var(--theme);
 	color: whitesmoke;
 	border: none;
@@ -486,6 +494,48 @@ header nav ul li a:hover {
 }
 /*Contact us style end here*/
 
+/********* POP UP STYLing********/
+.popup {
+    width: 400px;
+    background: #fff;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.1);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #333;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+}
+
+.open-popup {
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.popup img {
+    width: 100px;
+    margin-top: -50px;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+
+}
+
+.popup button {
+    width: 100%;
+    color:#fff;
+    margin-top: 50px;
+    padding: 10px 0;
+    background: #6fd649;
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
 /* about us start */
 
 .aboutus {
@@ -548,9 +598,124 @@ header nav ul li a:hover {
     transition: 0.3s;
 }
 
-/*about us end*/
+/*****************  MEET OUR TEAM ***************/
+.card{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-direction: column;
+	margin: 0px 20px;
+	padding: 20px 20px;
+	background-color: #efefef;
+	border-radius: 10px;
+	cursor: pointer;
+}
+.card:hover{
+	background-color: #333;
+	text-transform: inherit;
+	color: whitesmoke;
+	transition: 0.4s ease;
+}
+.card .icon{
+	font-size: 35px;
+	margin-bottom: 5px;
+}
 
-/* Footer style start here*/
+.card h2{
+	font-size: 28px;
+	color: #c94f4f;
+	margin-bottom: 20px;
+
+}
+
+.card p{
+	font-size: 17px;
+	margin-bottom: 30px;
+	line-height: 1.5;
+	color: #5e5e5e;
+}
+
+.row1{
+	display: flex;
+	flex-wrap: wrap;
+	padding: 2em 1em;
+	text-align: center;
+	justify-content: space-between;
+	
+}
+
+.column{
+	width: 30%;
+	padding: 2em 1em;
+}
+
+.card1{
+	padding: 3em 1em;
+	background: #3f4041;
+	cursor: pointer;
+}
+
+.card1 .img-container{
+	width: 13em;
+	height: 13em;
+	background-color:#a993ff;
+	padding: 0.5em;
+	border-radius: 50%;
+	margin: 0 auto 2em auto;
+}
+
+.card1 img{
+	width: 12em;
+	height: 12em;
+	border-radius: 50%;
+
+}
+
+.card1 h3{
+	font-weight: 500;
+	color:whitesmoke;
+}
+
+.card1 p{
+	font-weight: 300;
+	text-transform: uppercase;
+	margin: 0.5em 0 2em 0;
+	letter-spacing: 2px;
+	color:whitesmoke;
+	
+}
+
+.icons{
+	width: 50%;
+	min-width: 180px;
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+}
+
+.icons i:hover {
+    color:#000;
+}
+
+.card1 a{
+	text-decoration: none;
+	color: inherit;
+	font-size: 1.4em;
+}
+
+.card1:hover{
+	background: linear-gradient(#6045ea, #8567f7);
+	color:#ffffff;
+}
+
+.card1:hover .img-container{
+	transform: scale(1.1);
+}
+
+/*****************  about us end****************/
+
+/*****************  Footer style start here*/
 footer {
     background-color: #181818;
     color: #7f7f7f;
@@ -601,13 +766,6 @@ footer .newsLetterContainer input {
     width: 100%;
     color:#ccc;
     border-radius: 10px;
-}
-
-footer .icons {
-	width: 50%;
-	min-width: 180px;
-	display: flex;
-	justify-content: space-between;
 }
 
 .btn img{
@@ -663,6 +821,124 @@ footer .icons {
         grid-template-columns: repeat(2, 1fr);
     }
 
+    .card{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-direction: column;
+	margin: 0px 20px;
+	padding: 20px 20px;
+	background-color: #efefef;
+	border-radius: 10px;
+	cursor: pointer;
+}
+.card:hover{
+	background-color: #333;
+	text-transform: inherit;
+	color: whitesmoke;
+	transition: 0.4s ease;
+}
+.card .icon{
+	font-size: 35px;
+	margin-bottom: 5px;
+}
+
+.card h2{
+	font-size: 28px;
+	color: var(--theme);
+	margin-bottom: 20px;
+
+}
+
+.card p{
+	font-size: 17px;
+	margin-bottom: 30px;
+	line-height: 1.5;
+	color: #5e5e5e;
+}
+
+.row1{
+	display: flex;
+	flex-wrap: wrap;
+	padding: 2em 1em;
+	text-align: center;
+	justify-content: space-between;
+	
+}
+
+.column{
+	width: 30%;
+	padding: 2em 1em;
+}
+
+.card1{
+	padding: 3em 1em;
+	background: #3f4041;
+	cursor: pointer;
+}
+
+.card1 .img-container{
+	width: 13em;
+	height: 13em;
+	background-color:#a993ff;
+	padding: 0.5em;
+	border-radius: 50%;
+	margin: 0 auto 2em auto;
+}
+
+.card1 img{
+	width: 12em;
+	height: 12em;
+	border-radius: 50%;
+
+}
+
+.card1 h3{
+	font-weight: 500;
+	color:whitesmoke;
+}
+
+.card1 p{
+	font-weight: 300;
+	text-transform: uppercase;
+	margin: 0.5em 0 2em 0;
+	letter-spacing: 2px;
+	color:whitesmoke;
+	
+}
+
+.icons{
+	width: 50%;
+	min-width: 180px;
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+}
+
+.icons i:hover {
+    color:#000;
+}
+
+.card1 a{
+	text-decoration: none;
+	color: inherit;
+	font-size: 1.4em;
+}
+
+.card1:hover{
+	background: linear-gradient(#6045ea, #8567f7);
+	color:#ffffff;
+    transition: 4s ease;
+}
+
+.card1:hover .img-container{
+	transform: scale(1.1);
+    transition: 4s ease;
+}
+
+
+
 }
 
 /*burger menu style start*/
@@ -675,6 +951,25 @@ footer .icons {
         margin-top: 20px;
         border-radius: 5px;
     }
+
+    /****MEET OUR TEAM***/
+    .row1{
+        flex: 0 0 33.33%;
+        max-width: 33.33%;
+        padding: 0 1em;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .column{
+        flex: 0 0 33.33%;
+        width: 400px;
+        margin-top: 10px;
+        padding: 0 1em;
+        display: flex;
+        flex-direction: column;
+    }
+
 /* burger menu designing start*/
     header nav:after{
         top: 17px;

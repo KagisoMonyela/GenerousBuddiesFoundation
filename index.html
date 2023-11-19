@@ -156,13 +156,30 @@
                         <input type="text" name="last name" class="text-box" placeholder="Last Name" required>
                         <input type="email" name="email" class="text-box" placeholder="Email" required>
                         <input type="number" name="phone" class="text-box" placeholder="Phone +2766 000 9999" required>
+                        <input type="id-number" name="identity" class="text-box" placeholder="South African ID or Passport Number" required>
+                        <select id="province" class="text-box" required>
+                            <option value="province">Select Gender</option>
+                            <option value="eastern-cape">Male</option>
+                            <option value="free-state">Female</option>
+                        </select>
                         <input type="text" name="address" class="text-box" placeholder="Adress line 1" required>
                         <input type="text" name="address2" class="text-box" placeholder="Adress line 2" required>
                         <input type="text" name="address3" class="text-box" placeholder="Adress line 3 if applicable">
                         <input type="number" name="posta-code" class="text-box" placeholder="Postal Code" required>
                         <input type="text" name="city" class="text-box" placeholder="City" required>
-                        <input type="text" name="province" class="text-box" placeholder="Province" required>
-                        <textarea name="message" rows="5" placeholder="Tell us about yourself" required></textarea>
+                        <select id="province" class="text-box" required>
+                            <option value="province">Select Province</option>
+                            <option value="eastern-cape">Eastern Cape</option>
+                            <option value="free-state">Free State</option>
+                            <option value="gauteng">Gauteng</option>
+                            <option value="kwazulu-natal">KwaZulu-Natal</option>
+                            <option value="limpopo">Limpopo</option>
+                            <option value="mpumalanga">Mpumalanga</option>
+                            <option value="nothern-cape">Northern Cape</option>
+                            <option value="north-west">North West</option>
+                            <option value="western-cape">Western Cape</option>
+                        </select>
+                        <textarea name="message" rows="5" placeholder="Tell us about yourself?" required></textarea>
                         <input type="submit" name="submit" class="send-btn" value="submit">
                       </form>
                     </div>
@@ -299,14 +316,21 @@
                       <div><i class="fas fa-clock"></i>Mon - Fri 8:00 AM to 6:00 PM</div>
                     </div>
                     <div class="contact-form">
-                      <form class="contact" action="https://formsubmit.co/mogalekmonyela@gmail.com" method="post">
+                         <!--action="https://formsubmit.co/mogalekmonyela@gmail.com"-->
+                      <form class="contact" id="formSend">
                         <input type="text" name="first name" class="text-box" placeholder="First Name" required>
-                        <input type="text" name="last name" class="text-box" placeholder="Last Name" required>
-                        <input type="email" name="email" class="text-box" placeholder="Email" required>
-                        <input type="number" name="phone" class="text-box" placeholder="Phone +2766 000 9999" required>
-                        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-                        <input type="submit" name="submit" class="send-btn" value="send">
+                        <input type="text" name="last name" class="text-box" placeholder="Last Name" >
+                        <input type="email" name="email" class="text-box" placeholder="Email" >
+                        <input type="number" name="phone" class="text-box" placeholder="Phone +2766 000 9999" >
+                        <textarea name="message" rows="5" placeholder="Your Message" ></textarea>
+                        <button type="submit" name="submit" class="send-btn" >Send</button>
                       </form>
+                      <div class="popup" id="popup">
+                        <img src="img/Icons/tick.png">
+                        <h2>Thank You!</h2>
+                        <p>Your details have been submited successfully. Thank you!</p>
+                        <button type="button" class="btn" onclick="closePopup()">Ok</button>
+                    </div>
                     </div>
                 </div>
             </div>
@@ -364,7 +388,89 @@
                         </p>
                     </div>
                     <!-- Scolarship Box end-->
+
                 </div>
+                <section >
+                    
+                    <h2 class="sectionTitle">Meet Our Team</h2>
+                    <div class="row1">
+                      <!--column1-->
+                      <div class="column">
+                        <div class="card1">
+                          <div class="img-container">
+                            <img src="img/gallery/team/kgothatso.jpg " alt=""/>
+                          </div>
+                          <h3>Kgothatso Maimela</h3>
+                          <p>Chairperson <br>and <br>Co-Founder</p>
+                          <div class="icons">
+                            <a href="#">
+                              <i class="fab fa-facebook"></i>
+                            </a>
+                            <a href="#">
+                              <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#">
+                              <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#">
+                              <i class="fas fa-envelope"></i>
+                            </a>
+                            
+                          </div>
+                        </div>
+                      </div>
+                      <!--column2-->
+                      <div class="column">
+                        <div class="card1">
+                          <div class="img-container">
+                            <img src="img/gallery/team/nthabiseng.jpg " alt=""/>
+                          </div>
+                          <h3>Nthabiseng Mongoai</h3>
+                          <p>Chairperson <br>and <br>Co-Founder</p>
+                          <div class="icons">
+                            <a href="#">
+                              <i class="fab fa-facebook"></i>
+                            </a>
+                            <a href="#">
+                              <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#">
+                              <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#">
+                              <i class="fas fa-envelope"></i>
+                            </a>
+                            
+                          </div>
+                        </div>
+                      </div>
+                       <!--column3-->
+                       <div class="column">
+                        <div class="card1">
+                          <div class="img-container">
+                            <img src="img/gallery/team/sibusiso.jpg " alt=""/>
+                          </div>
+                          <h3>Sibusiso Skosana</h3>
+                          <p>Secretary <br>and<br> Co-Founder</p>
+                          <div class="icons">
+                            <a href="#">
+                              <i class="fab fa-facebook"></i>
+                            </a>
+                            <a href="#">
+                              <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#">
+                              <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#">
+                              <i class="fas fa-envelope"></i>
+                            </a>
+                            
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
             </div>
         </section>
         <!-- about section end-->
@@ -381,7 +487,6 @@
                         rem, aliquam repudiandae expedita alias pariatur culpa maxime facere, minus
                         obcaecati nobis similique assumenda tempore. Reiciendis rem expedita incidunt aut!
                     </p>
-                    <input type="text" placeholder="Enter your email" />
                 </div>
                 <!-- news letter container ends-->
 
@@ -424,14 +529,14 @@
                     <p>info@ngo.com</p>
                     <p>+2766 845 5889</p>
 
-                    <div class="icons">
+                    
                         <a class="btn" href="https://www.instagram.com/"><img src="img/Icons/FaceBook1.png"/></a>
                         <a class="btn" href="https://www.instagram.com/"><img src="img/Icons/Instagram1.png"/></a>
                         <a class="btn" href="https://twitter.com/home?lang=en"><img src="img/Icons/Twitter1.png"/></a>
 	                    <a class="btn" href="https://www.youtube.com/watch?v=SeBItlDg0wc&t=317s"><img src="img/Icons/YouTube1.png"/></a>
                         <a class="btn" href="https://www.youtube.com/watch?v=SeBItlDg0wc&t=317s"><img src="img/Icons/linkedin.png" style="height:64px"/></a>
                         
-                      </div>
+                      
                 </div>
                 <!-- conectt with us container end-->
 
@@ -481,8 +586,22 @@
  
       menuBtn.addEventListener('click',()=>{
       navlinks.classList.toggle('mobile-menu')
-    })
+    });
 
+    </script>
+
+    <script>
+        let form = document.querySelector('#formSend');
+        let popup = document.querySelector('.popup');
+
+    form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        popup.classList.add('open-popup');
+    });
+
+    function closePopup(){
+        popup.classList.remove('open-popup');
+    }
     </script>
 
 </html>
