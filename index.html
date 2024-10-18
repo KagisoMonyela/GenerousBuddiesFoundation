@@ -15,7 +15,7 @@
             <header>
                 <div class="container">
                     <div class="logo">
-                        <img src="img/Icons/logo.png" style="width: 100px; "/>
+                        <img src="img/Icons/logo.png" style="width: 100px; height: auto; " alt="GBF"/>
                     </div>
                     <nav>
                         <ul>
@@ -180,6 +180,8 @@
                             <option value="western-cape">Western Cape</option>
                         </select>
                         <textarea name="message" rows="5" placeholder="Tell us about yourself?" ></textarea>
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_template" value="table">
                         <input type="submit" name="submit" class="send-btn" value="submit">
                       </form>
                     </div>
@@ -323,14 +325,18 @@
                         <input type="email" name="email" class="text-box" placeholder="Email" >
                         <input type="number" name="phone" class="text-box" placeholder="Phone +2766 000 9999" >
                         <textarea name="message" rows="5" placeholder="Your Message" ></textarea>
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_template" value="table">
                         <button type="submit" name="submit" class="send-btn" >Send</button>
                       </form>
+                      <!--
                       <div class="popup" id="popup">
                         <img src="img/Icons/tick.png">
                         <h2>Thank You!</h2>
                         <p>Your details have been submited successfully. Thank you!</p>
-                        <button type="button" class="btn" onclick="closePopup()">Ok</button>
-                    </div>
+                        <input type="hidden" name="_captcha" value="false">
+                        <button type="button" class="btn" onclick="closePopup()" >Ok</button>
+                    </div>-->
                     </div>
                 </div>
             </div>
@@ -589,6 +595,7 @@
     });
 
     </script>
+<!--pop up thanks
 
     <script>
         let form = document.querySelector('#formSend');
@@ -603,5 +610,6 @@
         popup.classList.remove('open-popup');
     }
     </script>
+    -->
 
 </html>
