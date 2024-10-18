@@ -151,7 +151,7 @@
                 <h2 class="sectionTitle">Get Involved</h2>
                 <div class="contactusSection">
                     <div class="contact-form">
-                      <form class="contact" action="https://formsubmit.co/mogalekmonyela@gmail.com" method="POST">
+                      <form class="contact" action="https://formsubmit.co/mogalekmonyela@gmail.com" method="POST" enctype="multipart/form-data">
                         <input type="text" name="first name" class="text-box" placeholder="First Name" >
                         <input type="text" name="last name" class="text-box" placeholder="Last Name" >
                         <input type="email" name="email" class="text-box" placeholder="Email" >
@@ -183,6 +183,10 @@
                         <input type="hidden" name="_captcha" value="false">
                         <input type="hidden" name="_template" value="table">
                         <input type="submit" name="submit" class="send-btn" value="submit">
+                        <input class="text-box" type="email" name="email" placeholder="Your email">
+                        <textarea class="text-box" name="message" placeholder="Details of your problem" style="float: left"></textarea>
+                        <input type="file" name="attachment" accept="image/png, image/jpeg/pdf">
+                        <button class="send-btn" type="submit">Upoad File</button>
                       </form>
             
                     </div>
