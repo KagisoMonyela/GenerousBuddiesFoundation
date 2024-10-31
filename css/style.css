@@ -81,9 +81,7 @@ header .container {
     justify-content: space-between;
 }
 
-header .container .logo img {
-    height: 100%;
-}
+
 
 header nav ul {
     list-style-type: none;
