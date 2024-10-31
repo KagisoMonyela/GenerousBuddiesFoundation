@@ -83,6 +83,7 @@ header .container {
 
 header .container .logo img {
     height: 65px;
+    width: 100px;
 }
 
 header nav ul {
