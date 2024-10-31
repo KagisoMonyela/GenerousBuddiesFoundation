@@ -84,6 +84,15 @@ header .container {
 header .container .logo img {
     height: 65px;
     width: 100px;
+    display: inline-block;
+    height: 75px;
+    line-height: 75px;
+    padding: 0 15px;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 16px;
+    color: #fff;
+    transition: 0.3s;
 }
 
 header nav ul {
