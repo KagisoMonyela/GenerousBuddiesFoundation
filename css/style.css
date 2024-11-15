@@ -564,7 +564,7 @@ header nav ul li a:hover {
 }
 
 #aboutSection .cards > div:hover {
-    width: 400px;
+    width: 350px;
     margin-top: -20px;
     border-color: var(--theme);
     padding: 55px;
