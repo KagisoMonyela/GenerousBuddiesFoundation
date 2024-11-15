@@ -595,7 +595,7 @@ header nav ul li a:hover {
 #aboutSection .cards > div:hover button {
     background-color: var(--theme);
     color: #fff;
-    transition: 3s;
+    transition: 0.7s;
 }
 
 /*****************  MEET OUR TEAM ***************/
