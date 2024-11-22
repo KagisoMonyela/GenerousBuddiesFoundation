@@ -705,7 +705,7 @@ header nav ul li a:hover {
 }
 
 .card1:hover{
-	background: linear-gradient(var(--theme));
+	background:var(--theme);
 	color:var(--theme);
 }
 
