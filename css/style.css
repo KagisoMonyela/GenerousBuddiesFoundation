@@ -614,7 +614,7 @@ header nav ul li a:hover {
 .card:hover{
 	background-color: #333;
 	text-transform: inherit;
-	color: whitesmoke;
+	color: var(--theme);
 	transition: 0.4s ease;
 }
 .card .icon{
