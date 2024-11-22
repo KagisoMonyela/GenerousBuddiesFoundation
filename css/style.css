@@ -5,7 +5,7 @@
     --theme:#1d9bac;
     --gray: #efefef;
     --black:#000;
-    --buttonColor:#2E94E3;
+    --buttonColor:#1d9bac;
 }
 
 html {
@@ -705,7 +705,7 @@ header nav ul li a:hover {
 }
 
 .card1:hover{
-	background: linear-gradient(#6045ea, #8567f7);
+	background: linear-gradient(var(--theme));
 	color:#ffffff;
 }
 
