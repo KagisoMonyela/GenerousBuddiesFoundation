@@ -660,7 +660,7 @@ header nav ul li a:hover {
 .card1 .img-container{
 	width: 13em;
 	height: 13em;
-	background-color:#a993ff;
+	background-color: var(--gray);
 	padding: 0.5em;
 	border-radius: 50%;
 	margin: 0 auto 2em auto;
@@ -696,7 +696,7 @@ header nav ul li a:hover {
 }
 
 .icons i:hover {
-    color:#e40f0f;
+    color:#000;
 }
 
 .card1 a{
@@ -704,10 +704,10 @@ header nav ul li a:hover {
 	color: inherit;
 	font-size: 1.4em;
 }
-
+/** Cards Social media Icons*/
 .card1:hover{
 	background:var(--theme);
-	color:var(--theme);
+	color: whitesmoke;
 }
 
 .card1:hover .img-container{
