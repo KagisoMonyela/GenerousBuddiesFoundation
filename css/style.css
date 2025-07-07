@@ -102,7 +102,7 @@ header nav ul li a {
     text-transform: capitalize;
     font-size: 16px;
     color: #fff;
-    transition: 0.3s;
+    transition: 0.3s ease;
 }
 
 header nav ul li a:hover {
@@ -560,7 +560,7 @@ header nav ul li a:hover {
     border-radius: 7px;
     height: 225px;
     border: 1px solid var(--black);
-    transition: 0.4s;
+    transition: 0.3s ease;
 }
 
 #aboutSection .cards > div:hover {
@@ -598,43 +598,65 @@ header nav ul li a:hover {
     transition: 0.3s;
 }
 
+/*****************Read More POPUP ***************/
+
+
+.popup-box .overlay {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, .6);
+    z-index: 1;
+    display: none;
+    
+}
+
+.popup-box .readmore-content {
+    position: absolute;
+    top: 22%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    background: #fff;
+    width: 800px;
+    height: 400px;
+    z-index: 2;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    border: solid 1px var(--theme);
+    border-radius: 8px;
+}
+
+.popup-box .close-btn {
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    width: 30px;
+    height: 30px;
+    background: var(--theme);
+    color: #fff;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.popup-box.active .overlay{
+    display: block;
+}
+
+.popup-box.active .readmore-content {
+    transition: all 1s ease-in-out;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+
 /*****************  MEET OUR TEAM ***************/
-.card{
-	width: 100%;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	flex-direction: column;
-	margin: 0px 20px;
-	padding: 20px 20px;
-	background-color: #efefef;
-	border-radius: 10px;
-	cursor: pointer;
-}
-.card:hover{
-	background-color: #333;
-	text-transform: inherit;
-	color: whitesmoke;
-	transition: 0.4s ease;
-}
-.card .icon{
-	font-size: 35px;
-	margin-bottom: 5px;
-}
 
-.card h2{
-	font-size: 28px;
-	color: #c94f4f;
-	margin-bottom: 20px;
-
-}
-
-.card p{
-	font-size: 17px;
-	margin-bottom: 30px;
-	line-height: 1.5;
-	color: #5e5e5e;
-}
 
 .row1{
 	display: flex;
@@ -642,6 +664,7 @@ header nav ul li a:hover {
 	padding: 2em 1em;
 	text-align: center;
 	justify-content: space-between;
+    transition: 0.3s ease;
 	
 }
 
@@ -654,12 +677,14 @@ header nav ul li a:hover {
 	padding: 3em 1em;
 	background: #3f4041;
 	cursor: pointer;
+	border-radius: 10px;
+    
 }
 
 .card1 .img-container{
 	width: 13em;
 	height: 13em;
-	background-color:#a993ff;
+	background-color:var(--theme);
 	padding: 0.5em;
 	border-radius: 50%;
 	margin: 0 auto 2em auto;
