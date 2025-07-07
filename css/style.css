@@ -2,10 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
 
 :root {
-    --theme:#e43a47;
+    --theme:#1d9bac;
     --gray: #efefef;
     --black:#000;
-    --buttonColor:#2E94E3;
+    --buttonColor:#1d9bac;
 }
 
 html {
@@ -221,7 +221,7 @@ header nav ul li a:hover {
 
 .programs .boxContainer .box:nth-child(4) .cardImage,
 .programs .boxContainer .box:nth-child(4) .cardImage:after {
-    background-image: url("../img/gallery/donations/smu4.jpg");
+    background-image: url("../img/gallery/Donations/smu5.jpg");
 }
 
 .programs .boxContainer .box:hover .cardImage:after {
@@ -490,7 +490,7 @@ header nav ul li a:hover {
 }
 
 .contact-form .send-btn:hover {
-	background: var(--buttonColor);
+	background: rgb(117, 185, 15);
 }
 /*Contact us style end here*/
 
@@ -564,7 +564,7 @@ header nav ul li a:hover {
 }
 
 #aboutSection .cards > div:hover {
-    width: 400px;
+    width: 350px;
     margin-top: -20px;
     border-color: var(--theme);
     padding: 55px;
@@ -595,7 +595,7 @@ header nav ul li a:hover {
 #aboutSection .cards > div:hover button {
     background-color: var(--theme);
     color: #fff;
-    transition: 0.3s;
+    transition: 0.7s;
 }
 
 /*****************Read More POPUP ***************/
@@ -656,7 +656,43 @@ header nav ul li a:hover {
 
 
 /*****************  MEET OUR TEAM ***************/
+.card{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-direction: column;
+	margin: 0px 20px;
+	padding: 20px 20px;
+	background-color: #efefef;
+	border-radius: 10px;
+	cursor: pointer;
+}
+.card:hover{
+	background-color: #333;
+	text-transform: inherit;
+	color: var(--theme);
+	transition: 0.4s ease;
+}
+.card .icon{
+	font-size: 35px;
+	margin-bottom: 5px;
+    
+}
 
+.card h2{
+	font-size: 28px;
+	color: #c94f4f;
+	margin-bottom: 20px;
+
+}
+
+.card p{
+	font-size: 17px;
+	margin-bottom: 30px;
+	line-height: 1.5;
+	color: #5e5e5e;
+}
 
 .row1{
 	display: flex;
@@ -684,7 +720,7 @@ header nav ul li a:hover {
 .card1 .img-container{
 	width: 13em;
 	height: 13em;
-	background-color:var(--theme);
+	background-color: var(--gray);
 	padding: 0.5em;
 	border-radius: 50%;
 	margin: 0 auto 2em auto;
@@ -728,10 +764,10 @@ header nav ul li a:hover {
 	color: inherit;
 	font-size: 1.4em;
 }
-
+/** Cards Social media Icons*/
 .card1:hover{
-	background: linear-gradient(#6045ea, #8567f7);
-	color:#ffffff;
+	background:var(--theme);
+	color: whitesmoke;
 }
 
 .card1:hover .img-container{
