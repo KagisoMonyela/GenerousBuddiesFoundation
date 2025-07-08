@@ -36,6 +36,10 @@ p {
     margin: auto;
 }
 
+.title nav ul li a:hover {
+    color: whitesmoke;
+}
+
 .sectionTitle {
     width: 300px;
     border-bottom: 3px solid var(--theme);
@@ -62,7 +66,7 @@ p {
 }
 
 section {
-    padding: 60px 0;
+    padding: 60px 0px;
     position: relative;
 }
 
